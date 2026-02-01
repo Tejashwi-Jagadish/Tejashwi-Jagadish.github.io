@@ -1,1 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tejashwi K J | Robotics & Automotive Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Portfolio of Tejashwi K J, Robotics Master's student with experience in automotive electrical harness design, vehicle electrical systems, and automation."
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background elements -->
+  <div class="bg-grid"></div>
+  <div class="bg-orbit bg-orbit--one"></div>
+  <div class="bg-orbit bg-orbit--two"></div>
+  <div class="decor-chip decor-chip--left"></div>
+  <div class="decor-chip decor-chip--right"></div>
+
+  <!-- Floating robot parts layer -->
+  <div id="robot-parts-layer"></div>
+
+  <!-- Stylised robot arm motif in corner -->
+  <svg class="robot-arm" viewBox="0 0 200 200" aria-hidden="true">
+    <g stroke="rgba(148,163,184,0.5)" stroke-width="2" fill="none" stroke-linecap="round">
+      <circle cx="40" cy="160" r="18" />
+      <line x1="40" y1="142" x2="80" y2="110" />
+      <circle cx="80" cy="110" r="12" />
+      <line x1="86" y1="102" x2="130" y2="70" />
+      <circle cx="130" cy="70" r="10" />
+      <line x1="136" y1="62" x2="160" y2="40" />
+      <polyline points="160,40 170,35 170,45 160,40" />
+    </g>
+  </svg>
+
+  <main class="shell">
+    <!-- Top navigation -->
+    <header class="top-nav">
+      <div class="logo-mark">
+        <span class="logo-orbit"></span>
+        <span class="logo-text">TEJASHWI / ROBOTICS</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="about" class="hero-layout">
+      <section class="card card--hero">
+        <div class="card-glow"></div>
+        <div class="card-inner">
+          <p class="hero-kicker">Robotics · Automation · Intelligent Systems</p>
+          <h1 class="hero-title">
+            Building reliable<br />
+            <span class="hero-gradient">robotic & automotive systems.</span>
+          </h1>
+          <p class="hero-text">
+            I am a <span class="hero-highlight">Robotics Master's student</span> with a background in mechanical
+            engineering, specialising in automotive electrical harness design and vehicle electrical
+            systems. I enjoy designing safe, automation‑driven solutions where hardware, software, and
+            robotics meet.
+          </p>
+
+          <div class="hero-pills">
+            <div class="pill">
+              <span class="pill-dot"></span>
+              Robotics Master's · Högskolan Väst
+            </div>
+            <div class="pill">Automotive electrical harness · 2D / 3D</div>
+            <div class="pill">Automation &amp; safety‑critical design</div>
+          </div>
+
+          <div class="cta-row">
+            <a href="mailto:tejashwijagadish@gmail.com" class="btn btn-primary">
+              <span class="btn-icon">✉️</span>
+              <span>Get in touch</span>
+            </a>
+            <a href="#projects" class="btn btn-ghost">
+              <span class="btn-icon">➜</span>
+              <span>View projects</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span><span class="bullet"></span> Based in Trollhättan, Sweden</span>
+            <span><span class="bullet"></span> Open to EU robotics &amp; automotive roles</span>
+            <span><span class="bullet"></span> GitHub:
+              <a href="https://github.com/Ashwi-x" target="_blank" rel="noreferrer">Ashwi-x</a>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Profile / quick info -->
+      <aside class="card card--profile">
+        <div class="card-inner profile-wrap">
+          <div class="profile-header">
+            <div class="avatar">
+              <span class="avatar-orbit"></span>
+              <span class="avatar-letter">T</span>
+            </div>
+            <div>
+              <div class="profile-name">Tejashwi K J</div>
+              <div class="profile-role">Robotics &amp; Automotive Engineer</div>
+              <div class="profile-location">🇸🇪 Trollhättan · from India</div>
+            </div>
+          </div>
+
+          <div class="profile-section">
+            <div class="profile-section-title">Focus areas</div>
+            <div class="chips">
+              <span class="chip">Robotics &amp; automation</span>
+              <span class="chip">Vehicle electrical systems</span>
+              <span class="chip">Electrical harness design</span>
+              <span class="chip">Safety‑critical systems</span>
+            </div>
+          </div>
+
+          <div class="profile-section">
+            <div class="profile-section-title">Snapshot</div>
+            <ul class="profile-list">
+              <li>Master's in Robotics with focus on automation and intelligent systems.</li>
+              <li>Experience in 2D/3D harness routing and vehicle electrical architectures.</li>
+              <li>Comfortable working across mechanical, electrical, and manufacturing domains.</li>
+            </ul>
+          </div>
+
+          <div class="profile-section" id="contact">
+            <div class="profile-section-title">Contact</div>
+            <div class="contact-list">
+              <span>Email:
+                <a href="mailto:tejashwijagadish@gmail.com">tejashwijagadish@gmail.com</a>
+              </span>
+              <span>GitHub:
+                <a href="https://github.com/Ashwi-x" target="_blank" rel="noreferrer">Ashwi-x</a>
+              </span>
+              <!-- <span>LinkedIn:
+                <a href="#" target="_blank" rel="noreferrer">Profile</a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2 class="section-heading">Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div>
+            <div class="timeline-main-title">Design Engineer · KPIT Technologies</div>
+            <div class="timeline-subtitle">
+              Automotive electrical harness design · Bengaluru, India
+            </div>
+            <ul class="bullet-list">
+              <li>Designed and developed vehicle electrical harnesses including 2D drawings and 3D routing for production programs.</li>
+              <li>Performed connector and tie placement, manufacturability checks, and compliance with automotive electrical standards.</li>
+              <li>Supported production launches with installation guidance, rework instructions and documentation in Teamcenter and Excel.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Solid Edge Cabling</span>
+              <span class="timeline-tag">CATIA V5 Electrical</span>
+              <span class="timeline-tag">Teamcenter</span>
+              <span class="timeline-tag">Design validation</span>
+            </div>
+          </div>
+          <div class="timeline-meta">
+            <div>Oct 2022 – Aug 2025</div>
+            <div>Full‑time · On‑site</div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div>
+            <div class="timeline-main-title">Engineering Intern · Bosch</div>
+            <div class="timeline-subtitle">Electrical harness data &amp; documentation</div>
+            <ul class="bullet-list">
+              <li>Managed electrical harness data in Solid Edge and Excel for automotive projects.</li>
+              <li>Prepared compliance, regulatory and manufacturing documentation supporting program launches.</li>
+              <li>Created technical reports and design documentation for engineering and production teams.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Bosch</span>
+              <span class="timeline-tag">Documentation</span>
+              <span class="timeline-tag">Manufacturing support</span>
+            </div>
+          </div>
+          <div class="timeline-meta">
+            <div>May 2022 – Jul 2023</div>
+            <div>Internship</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <h2 class="section-heading">Education</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div>
+            <div class="timeline-main-title">Master's in Robotics</div>
+            <div class="timeline-subtitle">Högskolan Väst (University West) · Sweden</div>
+            <ul class="bullet-list">
+              <li>Focus on automation and intelligent systems, including robotics, control and industrial automation.</li>
+              <li>Exploring robotics applications in automotive and industrial environments.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Robotics</span>
+              <span class="timeline-tag">Automation</span>
+              <span class="timeline-tag">Intelligent systems</span>
+            </div>
+          </div>
+          <div class="timeline-meta">
+            <div>Sep 2025 – Present</div>
+            <div>Master's degree</div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div>
+            <div class="timeline-main-title">B.Tech in Mechanical Engineering</div>
+            <div class="timeline-subtitle">Dayananda Sagar University · India</div>
+            <ul class="bullet-list">
+              <li>Built a strong foundation in mechanical design, dynamics and vehicle systems.</li>
+              <li>Completed projects focused on EV safety and suspension design.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Mechanical engineering</span>
+              <span class="timeline-tag">Automotive</span>
+            </div>
+          </div>
+          <div class="timeline-meta">
+            <div>2018 – 2022</div>
+            <div>Bachelor's degree</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2 class="section-heading">Selected projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-pill">EV safety · Industry project</div>
+          <h3 class="project-title">Automatic Wheel Chock Locking System for EV Safety</h3>
+          <div class="project-meta">Bosch · 2022</div>
+          <p class="project-body">
+            Designed a sensor‑based wheel chock safety system to secure electric vehicles during
+            loading operations, integrating tire detection sensors, control logic and alert
+            mechanisms with strong focus on operational safety.
+          </p>
+          <p class="project-tech">
+            <span>Technologies:</span> Sensors, microcontroller programming, safety‑oriented electrical design
+          </p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-pill">Vehicle dynamics · Academic</div>
+          <h3 class="project-title">Front Monoshock Suspension Design &amp; Analysis</h3>
+          <div class="project-meta">Dayananda Sagar University · 2022</div>
+          <p class="project-body">
+            Designed and analysed a front monoshock suspension system for a motorcycle, including
+            structural design, material selection and dynamic performance to improve stability and
+            ride comfort.
+          </p>
+          <p class="project-tech">
+            <span>Tools:</span> CAD modelling, simulation, structural and dynamic analysis
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2 class="section-heading">Skills</h2>
+      <div class="skills-grid">
+        <div class="skills-group">
+          <div class="skills-group-title">Engineering &amp; tools</div>
+          <p class="skills-line">
+            <span>CAD &amp; Harness:</span> Solid Edge Cabling Module, CATIA V5 Electrical, AutoCAD, Creo
+          </p>
+          <p class="skills-line">
+            <span>Data &amp; PLM:</span> Teamcenter, MS Excel for engineering data and documentation
+          </p>
+        </div>
+        <div class="skills-group">
+          <div class="skills-group-title">Robotics &amp; automation</div>
+          <p class="skills-line">
+            <span>Robotics:</span> Robotics fundamentals, industrial automation, RAPID programming (ABB)
+          </p>
+          <p class="skills-line">
+            <span>Control &amp; PLC:</span> PLC programming, basic Python for scripting and automation
+          </p>
+        </div>
+        <div class="skills-group">
+          <div class="skills-group-title">Professional</div>
+          <p class="skills-line">
+            <span>Project work:</span> Design validation, quality assurance, progress reporting, timeline management
+          </p>
+          <p class="skills-line">
+            <span>Collaboration:</span> Interdisciplinary communication with electrical, mechanical and manufacturing teams
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Tejashwi K J</span>
+    <span class="footer-note">Robotics &amp; automotive engineering portfolio</span>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.16 }
+    );
+
+    document
+      .querySelectorAll(
+        ".timeline-item, .project-card, .skills-group"
+      )
+      .forEach((el) => observer.observe(el));
+
+    // --- Floating robot parts (nuts/bolts/gears) ---
+    const layer = document.getElementById("robot-parts-layer");
+    const variants = ["nut", "bolt", "gear"];
+
+    function spawnRobotPart() {
+      if (!layer) return;
+
+      const part = document.createElement("div");
+      const variant = variants[Math.floor(Math.random() * variants.length)];
+      part.className = "robot-part robot-part--" + variant;
+
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const startX = Math.random() * vw;
+      const startY = vh + 20 + Math.random() * 40;
+      const endX = startX + (Math.random() * 80 - 40);
+      const endY = vh * 0.2 + Math.random() * (-vh * 0.6);
+
+      part.style.left = startX + "px";
+      part.style.top = startY + "px";
+      part.style.setProperty("--start-x", "0px");
+      part.style.setProperty("--start-y", "0px");
+      part.style.setProperty("--end-x", (endX - startX) + "px");
+      part.style.setProperty("--end-y", (endY - startY) + "px");
+
+      const duration = 8000 + Math.random() * 5000;
+      part.style.animation = "robotFloat " + duration + "ms linear forwards";
+
+      layer.appendChild(part);
+
+      setTimeout(() => {
+        if (part.parentNode) {
+          part.parentNode.removeChild(part);
+        }
+      }, duration + 200);
+    }
+
+    setInterval(spawnRobotPart, 1200);
+    for (let i = 0; i < 5; i++) {
+      setTimeout(spawnRobotPart, i * 400);
+    }
+  </script>
+</body>
+</html>
 
