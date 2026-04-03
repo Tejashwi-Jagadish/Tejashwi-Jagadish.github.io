@@ -2,12 +2,7 @@
 
 Professional portfolio website for Tejashwi K J, Robotics & Automotive Engineer.
 
-## Deploy to GitHub Pages
 
-1. Create repo named **`tejashwi-jagadish.github.io`** on GitHub
-2. Upload all files to the **root** (no subfolders)
-3. **Settings → Pages → Source: Deploy from branch → main → / (root)**
-4. Live at `https://tejashwi-jagadish.github.io` within 2 minutes
 
 ## Files
 
