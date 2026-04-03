@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV — Tejashwi K J</title>
+  <meta name="description" content="Curriculum Vitae — Tejashwi K J, Robotics & Automotive Engineer."/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    [data-theme="dark"]{--bg:#080809;--bg2:#0f0f11;--surface:#131316;--surface2:#1a1a1e;--border:#1e1e23;--border2:#2a2a32;--text:#f0f0ee;--text2:#a8a8b0;--muted:#55555f;--accent:#57e8ff;--accent-dim:rgba(87,232,255,0.08);--accent2:#b8ff57;--green:#57ff9a;--yellow:#ffd557;--red:#ff5757;--nav-bg:rgba(8,8,9,0.92)}
+    [data-theme="light"]{--bg:#f8f8f6;--bg2:#f0f0ee;--surface:#ffffff;--surface2:#f4f4f2;--border:#e0e0dc;--border2:#d0d0cc;--text:#0e0e0f;--text2:#4a4a52;--muted:#9a9aa2;--accent:#0077aa;--accent-dim:rgba(0,119,170,0.08);--accent2:#4a9200;--green:#008844;--yellow:#b87a00;--red:#cc2222;--nav-bg:rgba(248,248,246,0.92)}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.7;overflow-x:hidden;transition:background .3s,color .3s}
+    ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--border2)}
+    *{cursor:none}
+    .cursor{position:fixed;width:8px;height:8px;background:var(--accent);border-radius:50%;pointer-events:none;z-index:99999;mix-blend-mode:difference}
+    .cursor-ring{position:fixed;width:32px;height:32px;border:1px solid rgba(87,232,255,0.4);border-radius:50%;pointer-events:none;z-index:99998;transition:width .2s,height .2s}
+    [data-theme="dark"] body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E");pointer-events:none;z-index:9998}
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:64px;border-bottom:1px solid var(--border);background:var(--nav-bg);backdrop-filter:blur(20px)}
+    .nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:17px;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:8px}
+    .nav-logo-dot{width:6px;height:6px;background:var(--accent);border-radius:50%;animation:blink 2s infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+    .nav-center{display:flex;gap:2px}
+    .nav-link{color:var(--muted);text-decoration:none;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border:1px solid transparent;transition:all .2s}
+    .nav-link:hover{color:var(--text);border-color:var(--border2)}
+    .nav-link.active{color:var(--accent);border-color:var(--accent)}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    .theme-toggle{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid var(--border2);background:transparent;color:var(--muted);transition:all .2s}
+    .theme-toggle:hover{border-color:var(--accent);color:var(--accent)}
+    .theme-toggle svg{width:14px;height:14px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 22px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1px solid var(--border2);background:transparent;color:var(--text2);transition:all .2s}
+    .btn:hover{border-color:var(--text2);color:var(--text)}
+    .btn-accent{background:var(--accent);border-color:var(--accent);color:#080809}
+    .btn-accent:hover{background:transparent;color:var(--accent);border-color:var(--accent)}
+    /* PAGE BANNER */
+    .page-banner{padding:100px 48px 48px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+    .page-banner::before{content:'';position:absolute;top:-200px;right:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(87,232,255,.04) 0%,transparent 65%);pointer-events:none}
+    .banner-eyebrow{font-size:10px;color:var(--accent);letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+    .banner-eyebrow::before{content:attr(data-num);color:var(--muted)}
+    .banner-title{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(36px,5vw,72px);letter-spacing:-2px;color:var(--text);line-height:1.05;margin-bottom:16px}
+    .banner-sub{font-size:12px;color:var(--muted);letter-spacing:.1em}
+    /* CV LAYOUT */
+    .cv-wrap{display:grid;grid-template-columns:1fr 300px;gap:0;padding:0}
+    .cv-main{padding:64px 48px;border-right:1px solid var(--border)}
+    .cv-sidebar{padding:64px 32px;position:sticky;top:64px;align-self:start}
+    .cv-section{margin-bottom:56px}
+    .cv-section:last-child{margin-bottom:0}
+    .cv-section-head{font-size:10px;color:var(--accent);letter-spacing:.2em;text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+    .cv-section-head::before{content:'';width:6px;height:6px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px rgba(87,232,255,.4)}
+    .cv-entry{padding-left:24px;padding-bottom:40px;border-left:1px solid var(--border);position:relative;margin-left:4px}
+    .cv-entry:last-child{padding-bottom:0;border-left-color:transparent}
+    .cv-entry::before{content:'';position:absolute;left:-4px;top:6px;width:8px;height:8px;background:var(--border2);border:1px solid var(--accent);border-radius:50%;transition:all .3s}
+    .cv-entry:hover::before{background:var(--accent);box-shadow:0 0 8px rgba(87,232,255,.4)}
+    .cv-entry-meta{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+    .cv-period{font-size:10px;color:var(--accent);letter-spacing:.12em;text-transform:uppercase}
+    .cv-badge{font-size:10px;padding:2px 8px;border:1px solid var(--border2);color:var(--muted)}
+    .cv-org{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--text);margin-bottom:2px}
+    .cv-role{font-size:12px;color:var(--muted);margin-bottom:14px}
+    .cv-bullets{list-style:none;display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
+    .cv-bullets li{font-size:12px;color:var(--text2);padding-left:14px;position:relative;line-height:1.65}
+    .cv-bullets li::before{content:'→';position:absolute;left:0;color:var(--accent);font-size:10px}
+    .cv-tags{display:flex;gap:5px;flex-wrap:wrap}
+    .tag{font-size:10px;padding:3px 8px;border:1px solid var(--border2);color:var(--muted);letter-spacing:.06em;transition:all .2s}
+    .tag:hover{border-color:var(--accent);color:var(--accent)}
+    /* SIDEBAR */
+    .sb-block{margin-bottom:32px}
+    .sb-block:last-child{margin-bottom:0}
+    .sb-head{font-size:10px;color:var(--accent);letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+    .sb-row{display:flex;justify-content:space-between;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border);gap:12px}
+    .sb-key{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+    .sb-val{font-size:12px;color:var(--text);text-align:right}
+    .sb-val a{color:var(--accent2);text-decoration:none}
+    .sb-val.green{color:var(--green)}
+    .chip-group{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+    .chip{font-size:10px;padding:3px 8px;border:1px solid var(--border2);color:var(--muted);transition:all .2s}
+    .chip:hover{border-color:var(--accent);color:var(--accent)}
+    .chip.expert{border-color:rgba(87,232,255,.3);color:var(--accent)}
+    .dl-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;background:var(--accent-dim);border:1px solid rgba(87,232,255,.3);color:var(--accent);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;transition:all .2s;margin-top:8px}
+    .dl-btn:hover{background:var(--accent);color:#080809;border-color:var(--accent)}
+    footer{padding:24px 48px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+    footer p{font-size:11px;color:var(--muted)}
+    .footer-links{display:flex;gap:24px}
+    .footer-links a{font-size:11px;color:var(--muted);text-decoration:none;transition:color .2s}
+    .footer-links a:hover{color:var(--text)}
+    [data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+    [data-reveal].revealed{opacity:1;transform:none}
+    @media(max-width:900px){nav{padding:0 24px}.nav-center{display:none}.cv-wrap{grid-template-columns:1fr}.cv-main{padding:48px 24px;border-right:none}.cv-sidebar{padding:32px 24px;position:static;border-top:1px solid var(--border)}.page-banner{padding:80px 24px 40px}footer{flex-direction:column;gap:12px;padding:20px 24px}}
+  </style>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo"><div class="nav-logo-dot"></div>Tejashwi K J</a>
+  <div class="nav-center">
+    <a href="index.html#about" class="nav-link">About</a>
+    <a href="index.html#skills" class="nav-link">Skills</a>
+    <a href="index.html#experience" class="nav-link">Experience</a>
+    <a href="index.html#projects" class="nav-link">Projects</a>
+    <a href="cv.html" class="nav-link active">CV</a>
+    <a href="index.html#contact" class="nav-link">Contact</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle theme">
+      <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="page-banner">
+  <div class="banner-eyebrow" data-num="CV —">Curriculum Vitae</div>
+  <h1 class="banner-title">Experience &<br/><span style="color:var(--muted)">qualifications.</span></h1>
+  <div class="banner-sub">Work History · Education · Projects · Skills</div>
+</div>
+
+<div class="cv-wrap">
+  <!-- MAIN -->
+  <div class="cv-main">
+
+    <!-- EXPERIENCE -->
+    <div class="cv-section" data-reveal>
+      <div class="cv-section-head">Work Experience</div>
+      <div class="cv-entry">
+        <div class="cv-entry-meta">
+          <span class="cv-period">Oct 2022 — Aug 2025</span>
+          <span class="cv-badge">Full Time</span>
+        </div>
+        <div class="cv-org">KPIT Technologies</div>
+        <div class="cv-role">Design Engineer · Automotive</div>
+        <ul class="cv-bullets">
+          <li>Engineered vehicle electrical harnesses with comprehensive 2D drawings and 3D routing across multiple automotive production programmes</li>
+          <li>Executed strategic connector placement and manufacturability validation ensuring compliance with automotive electrical standards</li>
+          <li>Provided critical production launch support including installation guidance and technical documentation via Teamcenter PLM</li>
+          <li>Collaborated with cross-functional teams to optimise harness designs for cost, weight, and assembly efficiency</li>
+          <li>Reviewed and validated designs against client specifications and international automotive standards</li>
+        </ul>
+        <div class="cv-tags"><span class="tag">Solid Edge Cabling</span><span class="tag">CATIA V5 Electrical</span><span class="tag">Teamcenter PLM</span><span class="tag">Design Validation</span><span class="tag">Automotive EE</span></div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-meta">
+          <span class="cv-period">May 2022 — Jul 2023</span>
+          <span class="cv-badge">Internship</span>
+        </div>
+        <div class="cv-org">Bosch</div>
+        <div class="cv-role">Engineering Intern · Automotive</div>
+        <ul class="cv-bullets">
+          <li>Managed electrical harness data architecture using Solid Edge and Excel for complex automotive projects</li>
+          <li>Prepared compliance, regulatory, and manufacturing documentation for programme launches</li>
+          <li>Created detailed technical reports and design documentation for cross-functional engineering teams</li>
+          <li>Supported quality assurance processes and design review cycles throughout the programme</li>
+        </ul>
+        <div class="cv-tags"><span class="tag">Solid Edge</span><span class="tag">Documentation</span><span class="tag">Manufacturing</span><span class="tag">Quality Assurance</span></div>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="cv-section" data-reveal>
+      <div class="cv-section-head">Education</div>
+      <div class="cv-entry">
+        <div class="cv-entry-meta"><span class="cv-period">2024 — Present</span><span class="cv-badge">Ongoing</span></div>
+        <div class="cv-org">Högskolan Väst</div>
+        <div class="cv-role">MSc in Robotics · Trollhättan, Sweden</div>
+        <ul class="cv-bullets">
+          <li>Specialisation in industrial automation and intelligent systems</li>
+          <li>Coursework: RAPID (ABB) programming, PLC systems, control theory, safety-critical system design</li>
+          <li>Hands-on lab work: robot cell programming, two-PLC handshake protocol design</li>
+        </ul>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-meta"><span class="cv-period">2018 — 2022</span><span class="cv-badge">Completed</span></div>
+        <div class="cv-org">Dayananda Sagar University</div>
+        <div class="cv-role">BE in Mechanical Engineering · Bangalore, India</div>
+        <ul class="cv-bullets">
+          <li>Foundation in mechanical design, thermodynamics, manufacturing processes, CAD/CAM, and structural analysis</li>
+          <li>Final year project: Front Monoshock Suspension Design — structural analysis and FEA validation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="cv-section" data-reveal>
+      <div class="cv-section-head">Key Projects</div>
+      <div class="cv-entry">
+        <div class="cv-entry-meta"><span class="cv-period">2022</span><span class="cv-badge">Deployed · Bosch</span></div>
+        <div class="cv-org" style="font-size:16px">Automatic Wheel Chock Locking System</div>
+        <div class="cv-role">EV Safety · Embedded Systems</div>
+        <ul class="cv-bullets">
+          <li>Designed sensor-based wheel chock safety system for EV loading operations</li>
+          <li>Integrated tire detection sensors with microcontroller logic and multi-level alert mechanisms</li>
+          <li>Applied fail-safe design principles for production deployment compliance</li>
+        </ul>
+        <div class="cv-tags"><span class="tag">Sensors</span><span class="tag">Embedded</span><span class="tag">Safety</span></div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-meta"><span class="cv-period">2022</span><span class="cv-badge">Validated · DSU</span></div>
+        <div class="cv-org" style="font-size:16px">Front Monoshock Suspension Design</div>
+        <div class="cv-role">Vehicle Dynamics · Structural Analysis</div>
+        <ul class="cv-bullets">
+          <li>Designed advanced front suspension system for motorcycle applications</li>
+          <li>Conducted structural design, material selection, and FEA validation</li>
+          <li>Optimised for stability, ride comfort, and manufacturing feasibility</li>
+        </ul>
+        <div class="cv-tags"><span class="tag">CAD</span><span class="tag">FEA</span><span class="tag">Dynamics</span></div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-meta"><span class="cv-period">2024 — Present</span><span class="cv-badge">Academic · HV</span></div>
+        <div class="cv-org" style="font-size:16px">Industrial Robot Cell Programming</div>
+        <div class="cv-role">Robotics · ABB RAPID</div>
+        <ul class="cv-bullets">
+          <li>Programmed ABB robot arm in RAPID for pick-and-place automation</li>
+          <li>Motion planning, collision avoidance, and PLC handshake integration</li>
+        </ul>
+        <div class="cv-tags"><span class="tag">RAPID</span><span class="tag">ABB</span><span class="tag">PLC</span></div>
+      </div>
+    </div>
+
+  </div><!-- /cv-main -->
+
+  <!-- SIDEBAR -->
+  <div class="cv-sidebar" data-reveal>
+    <div class="sb-block">
+      <div class="sb-head">Contact</div>
+      <div class="sb-row"><span class="sb-key">Email</span><span class="sb-val" style="font-size:11px"><a href="mailto:tejashwijagadish@gmail.com" style="color:var(--accent)">tejashwijagadish@gmail.com</a></span></div>
+      <div class="sb-row"><span class="sb-key">GitHub</span><span class="sb-val"><a href="https://github.com/Tejashwi-Jagadish" target="_blank">Tejashwi-Jagadish ↗</a></span></div>
+      <div class="sb-row"><span class="sb-key">Location</span><span class="sb-val">Trollhättan, Sweden</span></div>
+      <div class="sb-row"><span class="sb-key">Status</span><span class="sb-val green">Open to Work</span></div>
+      <div class="sb-row"><span class="sb-key">Languages</span><span class="sb-val">English · Kannada</span></div>
+    </div>
+    <div class="sb-block">
+      <div class="sb-head">Expert Level</div>
+      <div class="chip-group">
+        <span class="chip expert">Solid Edge</span>
+        <span class="chip expert">CATIA V5</span>
+        <span class="chip expert">Technical Docs</span>
+        <span class="chip expert">Design Validation</span>
+        <span class="chip expert">Industrial Automation</span>
+      </div>
+    </div>
+    <div class="sb-block">
+      <div class="sb-head">Advanced Level</div>
+      <div class="chip-group">
+        <span class="chip">Teamcenter PLM</span>
+        <span class="chip">Python</span>
+        <span class="chip">RAPID (ABB)</span>
+        <span class="chip">AutoCAD</span>
+        <span class="chip">Control Systems</span>
+        <span class="chip">Quality Assurance</span>
+        <span class="chip">Project Management</span>
+      </div>
+    </div>
+    <div class="sb-block">
+      <div class="sb-head">Proficient</div>
+      <div class="chip-group">
+        <span class="chip">PLC Programming</span>
+        <span class="chip">Creo Parametric</span>
+        <span class="chip">FEA</span>
+      </div>
+    </div>
+    <div class="sb-block">
+      <div class="sb-head">Download CV</div>
+      <p style="font-size:11px;color:var(--muted);line-height:1.6;margin-bottom:8px">Download a PDF copy of the full CV for offline review or application submission.</p>
+      <button class="dl-btn" onclick="window.print()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download PDF
+      </button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Tejashwi K J — Trollhättan, Sweden 🇸🇪</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="https://github.com/Tejashwi-Jagadish" target="_blank">GitHub</a>
+    <a href="mailto:tejashwijagadish@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script>
+const cursor=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx-4+'px';cursor.style.top=my-4+'px';});
+function animRing(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx-16+'px';ring.style.top=ry-16+'px';requestAnimationFrame(animRing);}
+animRing();
+document.querySelectorAll('a,button').forEach(el=>{el.addEventListener('mouseenter',()=>{ring.style.width='48px';ring.style.height='48px';});el.addEventListener('mouseleave',()=>{ring.style.width='32px';ring.style.height='32px';});});
+function toggleTheme(){const h=document.documentElement,d=h.getAttribute('data-theme')==='dark';h.setAttribute('data-theme',d?'light':'dark');document.getElementById('theme-icon-moon').style.display=d?'none':'block';document.getElementById('theme-icon-sun').style.display=d?'block':'none';localStorage.setItem('theme',d?'light':'dark');}
+const st=localStorage.getItem('theme');
+if(st){document.documentElement.setAttribute('data-theme',st);if(st==='light'){document.getElementById('theme-icon-moon').style.display='none';document.getElementById('theme-icon-sun').style.display='block';}}
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('revealed');});},{threshold:.1});
+document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
